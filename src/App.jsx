@@ -1,12 +1,15 @@
-import { Login } from "./pages/Login"
+import { Navbar } from './components/Navbar';
+import ChatRoom from './pages/ChatRoom';
+import { Login } from './pages/Login';
 
 function App() {
-
-  return (
-    <>
-      <Login />
-    </>
-  )
+	return (
+		<>
+			<Navbar />
+			{/* <Login /> */}
+      <ChatRoom />
+		</>
+	);
 }
 
-export default App
+export default App;

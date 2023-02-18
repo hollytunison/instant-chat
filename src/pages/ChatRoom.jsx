@@ -1,5 +1,12 @@
-export const ChatRoom = () => {
+import SendMessage from "../components/SendMessage"
+import ChatBox from "../components/ChatBox"
+
+const ChatRoom = () => {
   return (
-    <div>ChatRoom</div>
+    <>
+      <ChatBox />
+      <SendMessage />
+    </>
   )
 }
+export default ChatRoom
