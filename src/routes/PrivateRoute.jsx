@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
+import { UserAuth } from "../context/AuthContext";
 
 export const PrivateRoute = ({ children }) => {
-  // later will be current user of logged in user
   const currentUser = false;
 
   if(!currentUser) {
