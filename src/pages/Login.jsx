@@ -1,6 +1,9 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 
 export const Login = () => {
+  const navigate = useNavigate();
   const { currentUser, signInWithGoogle } = UserAuth();
   
   const handleLogin = async () => {
@@ -10,6 +13,13 @@ export const Login = () => {
       console.log(error)
     }
   }
+
+  //redirects signed in user to chatroom
+  useEffect(() => {
+    if(currentUser) {
+      navigate("/chat")
+    }
+  }, [currentUser]);
 
   return (
     <div className="hero min-h-screen bg-base-200">
