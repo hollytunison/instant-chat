@@ -27,7 +27,7 @@ export const Login = () => {
     <div className="max-w-md">
       <h1 className="text-5xl font-bold">Hello there 👋🏻</h1>
       <p className="py-6">Join the conversation, meet new people, and make connections in one shared room.</p>
-      <button onClick={handleLogin} className="btn">Get Started</button>
+      <button onClick={handleLogin} className="btn btn-accent">Get Started</button>
     </div>
   </div>
 </div>

@@ -42,7 +42,7 @@ const SendMessage = () => {
 				/>
 				<button
 					type='submit'
-					className='w-auto bg-gray-500 text-white
+					className='w-auto bg-accent text-white
          rounded-r-lg px-5 text-md'
 				>
 					Send
